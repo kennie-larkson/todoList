@@ -1,31 +1,17 @@
 
-let updateBtn = document.querySelector("button");
+//let updateBtn = document.querySelector("button");
+;
 
+function update(){
 
-
-
-let updateList = function(){
-    var todoString = document.querySelector("input").value;
-    var para = document.querySelector("p");
-    var textNode;
-    var todoList = [];
-    todoList.length = 20;
-
-    if(todoString != " " ){
-        
-        let fillArray = todoList.splice(0,0, todoString);
-        
-         textNode = document.createTextNode(todoString);
-         
-         //textNode = document.createTextNode(fillArray);
-         //let newLine = document.write("\n");
-
-        para.appendChild(textNode);
-        
+    let inputString = document.querySelector("input").value;
+    let paragraph = document.querySelector("p");
+    let textNode = document.createTextNode(inputString);
+    paragraph.appendChild(textNode);
+    console.log(textNode);
     
+};
 
-    }
+//updateBtn.addEventListener("click", update);
 
-    // document.write("<br/>");
 
-}
