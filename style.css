@@ -1,3 +1,9 @@
 body{
     background-color: teal;
 }
+
+@media(min-width: 200) and (max-width: 400){
+    li{
+        width: 50%;
+    }
+}
